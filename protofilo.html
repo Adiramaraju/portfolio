@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">Aadi Rama Raju</div>
+        <ul class="nav-link">
+            <li><a href="#about">About</a></li>
+            <li> <a href="#experince">Experince</a></li>
+            <li> <a href="#project">Project</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aadi rama raju</div>
+        <div class="hamburger-menu">
+            <div class="humburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experince" onclick="toggleMenu()">Experince</a></li>
+                <li> <a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="main">
+        <div class="profile-container">
+            <img class="profile-pic" src="pic1.jpg" alt="profile pic">
+        </div>
+
+        <div class="profile-info">
+            <p class="p1">Hello, I'm</p>
+            <h1 class="profile-name">Aadi Rama Raju</h1>
+            <p class="p2">Frontend Developer</p>
+            <div class="btn">
+                <button class="button1" onClick="window.open('./resume.pdf')">
+                    download cv
+                </button>
+                <button class="button2" onClick="location.href='./#about'">about</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+        <p class="p1">Get To Know More</p>
+        <h1 class="about-title">About me</h1>
+        <div class="about-both-container">
+            <div class="about-image">
+                <img class="about-pic" src="pic3.jpeg" alt="about image" height="400px">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="experience.png" alt="exp img" class="exp-pic" height="40px">
+                        <h3>Experince</h3>
+                        <p>fresher</p>
+                        <p>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="education.png" alt="edu pic" class="edu-pic" height="40px">
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology (B.Tech)</p>
+                        <p>Intermediate (12th Grade)</p>
+                    </div>
+                </div>
+                <div class="text-container">Hi, I’m Adi Rama Raju. I’m a Frontend Developer with a passion for creating
+                    beautiful and functional web experiences. I specialize in building responsive websites using HTML,
+                    CSS, and JavaScript. I have the skills and knowledge to bring your ideas to life.
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="experince">
+        <p class="exp-info">Explore My</p>
+        <h1 class="exp-info-h1">Experince</h1>
+        <div class="exp-container-details">
+           
+            <div class="detail-container">
+                    <h2>Fronted Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>Html</h3>
+                                <p>Experinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>Css</h3>
+                                <p>Experinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>react</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3> Web Design</h3>
+                                <p>Basis</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <h2>Backend Developer</h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>sql</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="check" height="30px">
+                            <div class="det1">
+                                <h3>git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+    <div id="project">
+        <p class="p1">Browse My Recent</p>
+        <h1 class="p2">Project</h1>
+        <div class="project-details-container">
+            
+            <div class="details-contaier">
+                <div class="img-container">
+                   <img src="ecommerece.jpg" alt="project name" class="project-icon1"
+                  >
+                </div>
+                <div class="project-details">
+                    <h1>Ecommerce website</h1>
+                </div>
+                <div class="project-button">
+                    <button class="project-btn" onclick="window.open('https://github.com/Adiramaraju/e-commerce','_blank')" >
+                        Github
+                    </button>
+                    <button class="project-btn">
+                        Live demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-contaier">
+                <div class="img-container">
+                   <img src="pic3.jpeg" alt="project name" class="project-icon">
+                </div>
+                <div class="project-details">
+                    <h1>Project Two</h1>
+                </div>
+                <div class="project-button">
+                    <button class="project-btn" onclick="window.open('https://github.com/Adiramaraju/e-commerce','_blank')" >
+                        Github
+                    </button>
+                    <button class="project-btn">
+                        Live demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-contaier">
+                <div class="img-container">
+                   <img src="pic3.jpeg" alt="project name" class="project-icon">
+                </div>
+                <div class="project-details">
+                    <h1>project Three</h1>
+                </div>
+                <div class="project-button">
+                    <button class="project-btn" onclick="window.open('https://github.com/Adiramaraju/e-commerce','_blank')" >
+                        Github
+                    </button>
+                    <button class="project-btn">
+                        Live demo
+                    </button>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+    <div id="contact">
+        <p class="contact-p1">
+            Get in Touch
+        </p>
+        <h1 class="contact-p2">Contact</h1>
+        <div class="contact-details-container">
+            <div class="contact-container">
+                <div >
+                    <img src="email.png" alt="email-img" height="40px">
+                </div>
+                
+                    <div >
+                    <p class="contact-link">
+                        Example@gmail.com
+                    </div>
+                </p>
+            </div>
+            <div class="contact-container">
+                <img src="linkedin.png" alt="linkedln-img" height="40px">
+                <p class="contact-link" onClick="window.open('https://www.linkedin.com/in/aadiramaraju/','_blank')">
+                    Linkedln
+                </p>
+            </div>
+        </div>
+        <nav class="nav">
+            
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li> <a href="#experince">Experince</a></li>
+                <li> <a href="#project">Project</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="copy">
+            <p>copyright</p>
+            <p>&copy</p>
+            <p>2024</p>
+            <p>aadi rama raju.</p>
+        </div>
+    </div>
+
+    <script src="protofilo.js"></script>
+</body>
+
+</html>

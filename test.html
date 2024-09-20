@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hamburger-nav{
+            display: flex;
+        }
+     .hamburger-menu{
+        position: relative;;
+     }
+     .hamburger-list{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height:24px;
+        width:22px;
+     }
+     .hamburger-list span{
+        background-color: black;
+        width:100%;
+        height:4px;
+     }
+
+     .menu-lists{
+        position: absolute;
+        right:85%;
+        top:40px;
+        display: none;
+
+     }
+     .menu-lists.active {
+            display: flex; /* Show menu when 'active' class is added */
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <nav id="hamburger-nav">
+        
+        <div class="logo">Aadi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-list" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-lists">
+                <li><a href="#about" onClick="toggleMenu()">about</a></li>
+                <li><a href="#project" onClick="toggleMenu()">project</a></li>
+                <li><a href="#contact" onClick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+ 
+    <script>
+        function toggleMenu() {
+            const menuLists = document.querySelector('.menu-lists');
+            menuLists.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
